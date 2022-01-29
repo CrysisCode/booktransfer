@@ -1,0 +1,311 @@
+<div class="trips">
+  
+  <div class="cover p-0"></div>
+  <div class="container pt-5">
+    <div class="row p-0">
+      <div class="col-2 col-md-3 col-lg-4 col-xl-4 title title-1">
+        Filter
+      </div>
+      <div class="col-10 col-md-8 col-lg-5 me-auto col-xl-4 text-start title title-2 d-flex align-items-center">
+        Gefundene Busreisen (9)
+      </div>
+      <div class="col-2 col-md-4 me-auto d-lg-none d-xl-none d-xxl-none text-start round d-flex align-items-center justify-content-end">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><div class="circle d-flex align-content-center justify-content-center"><img class="w-75" src="../../assets/icons/filter-line.svg"></div></a>
+      </div>
+      <div class="col-6 col-md-5 col-lg-3 col-xl-4 d-flex justify-content-md-start justify-content-lg-end justify-content-xl-end sort mt-md-3">
+        <div class="dropdown">
+          <button class="btn sort-btn dropdown-toggle text-start" type="button" id="type"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Sortieren nach Preis
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="type">
+            <li><a class="dropdown-item" href="#">Item1</a></li>
+            <li><a class="dropdown-item" href="#">Item2</a></li>
+            <li><a class="dropdown-item" href="#">Item3</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex pb-5">
+      <div class="col-xl-4 col-lg-4">
+        <div class="filter mt-5 ">
+          <div class="row mx-0 d-flex mt-5 align-content-center text-light container">
+            <div class="col-xl-12 mt-3">
+              <label for="type" class="form-label asterisk">Land</label>
+              <div class="dropdown">
+                <button class="btn btn-secondary w-100 text-dark dropdown-toggle text-start" type="button" id="type"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Italy
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="type">
+                  <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                  <li><a class="dropdown-item" href="#">France</a></li>
+                  <li><a class="dropdown-item" href="#">Italy</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="text mt-3">
+              <div class="row mx-0 d-flex  align-items-center ">
+                <div class="col-xl-6 me-auto p-0 text-start mt-3">
+                  <label for="from" class="form-label asterisk p-0 text-nowrap">Abfahrtsdatum von</label>
+                  <div class="input-group">
+                    <input class="form-control p-2 date-input" type="text" placeholder="20/10/2021"
+                      aria-describedby="from">
+                    <span class="input-group-text date-span" id="from"><img src="../../../assets/icons/calendar-icon.svg"></span>
+                  </div>
+                </div>
+                <div class="col-xl-5 p-0 text-start mt-3">
+                  <label for="to" class="form-label asterisk p-0 text-nowrap">Abfahrtsdatum bis</label>
+                  <div class="input-group">
+                    <input class="form-control p-2 time-input" type="text" placeholder="12:00" id="to">
+                    <span class="input-group-text time-span" id="from"><img src="../../../assets/icons/clock-icon.svg"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text mt-5">
+              <label for="to" class="form-label asterisk p-0">Abfahrtsdatum bis</label>
+              <div class="form-check col-1 col-lg-2 col-xl-1 col-md-3 mt-2 text-nowrap me-2" id="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                <label class="form-check-label" for="flexCheckDefault1">
+                  Sommersaison
+                </label>
+              </div>
+              <div class="form-check col-1 col-lg-2 col-xl-1 col-md-3 mt-2 text-nowrap me-2" id="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                <label class="form-check-label" for="flexCheckDefault1">
+                  Wintersaison
+                </label>
+              </div>
+              <div class="col-5 col-lg-6 col-xl-5 col-md-2 p-0 me-5 text-start mt-4">
+                <label for="from" class="form-label asterisk p-0 text-nowrap">Anzahl der freien Plätzen</label>
+                <div class="input-group">
+                  <button class="btn btn-primary btn-op" type="button" id="btn-op">-</button>
+                  <input class="form-control number-input text-center" type="number" placeholder="26"
+                    aria-describedby="from">
+                  <button class="btn btn-primary btn-op" type="button" id="btn-op">+</button>
+                </div>
+              </div>
+              <div class="col-12 p-0 me-5 text-start mt-4 custom-slider">
+                <label class="asterisk p-0 text-nowrap">Preis</label>
+                <div class="container px-3"><ng5-slider [(value)]="value" [(highValue)]="highValue" [options]="options"></ng5-slider></div>
+              </div>
+              <div class="col-12 p-0 me-5 text-start mt-4 mb-4 custom-slider">
+                <label for="slider_1" class="asterisk p-0 text-nowrap">Reisedauer</label>
+                <div class="container px-3" id="slider_1"><ng5-slider [(value)]="value_2" [(highValue)]="highValue_2" [options]="options_2"></ng5-slider></div>
+              </div>
+            </div>
+          </div>
+          <button class="btn p-0 w-100"><div class="filter-footer pt-4 pb-4 text-center">
+            FILTER ANWENDEN
+          </div></button>
+        </div>
+      </div>
+      
+      <div class="col-12 col-xl-8 col-lg-8 col-md-12 cards pt-xl-4 pt-lg-4 d-flex justify-content-center">
+        <div class="row text-center">
+          <div class="col-6 col-md-6 col-lg-4 col-xl-4 g-4">
+            <div class="card">
+              <div class="card-img-top">
+                <img class="card-img-top" src="../../assets/images/venice.jpg"
+                     alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-start">Weekend in Italy</h5>
+                <p class="card-text text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4 col-xl-4 g-4">
+            <div class="card ">
+              <div class="card-img-top">
+                <img class="card-img-top" src="../../assets/images/venice.jpg"
+                     alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-start">Weekend in Italy</h5>
+                <p class="card-text text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4 col-xl-4 g-4">
+            <div class="card">
+              <div class="card-img-top">
+                <img class="card-img-top" src="../../assets/images/venice.jpg"
+                     alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-start">Weekend in Italy</h5>
+                <p class="card-text text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4 col-xl-4 g-4">
+            <div class="card">
+              <div class="card-img-top">
+                <img class="card-img-top" src="../../assets/images/venice.jpg"
+                     alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-start">Weekend in Italy</h5>
+                <p class="card-text text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4 col-xl-4 g-4">
+            <div class="card">
+              <div class="card-img-top">
+                <img class="card-img-top" src="../../assets/images/venice.jpg"
+                     alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-start">Weekend in Italy</h5>
+                <p class="card-text text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4 col-xl-4 g-4">
+            <div class="card">
+              <div class="card-img-top">
+                <img class="card-img-top" src="../../assets/images/venice.jpg"
+                     alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-start">Weekend in Italy</h5>
+                <p class="card-text text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4 col-xl-4 g-4">
+            <div class="card">
+              <div class="card-img-top">
+                <img class="card-img-top" src="../../assets/images/venice.jpg"
+                     alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-start">Weekend in Italy</h5>
+                <p class="card-text text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4 col-xl-4 g-4">
+            <div class="card">
+              <div class="card-img-top">
+                <img class="card-img-top" src="../../assets/images/venice.jpg"
+                     alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title text-start">Weekend in Italy</h5>
+                <p class="card-text text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4 col-xl-4 g-4">
+            <div class="card">
+              <div class="card-img-top">
+                <img class="card-img-top" src="../../assets/images/venice.jpg"
+                     alt="Card image cap">
+              </div>
+              
+              <div class="card-body">
+                <h5 class="card-title text-start">Weekend in Italy</h5>
+                <p class="card-text text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header p-0">
+        <div class="row d-flex ">
+          <div class="col-xl-4 col-lg-4 ">
+            <div class="filters ">
+              <div class="row mx-0 d-flex align-content-center text-light container">
+                <div class="col-xl-12 mt-3">
+                  <div class="d-flex align-content-center">
+                  <div class="modal-filter pb-3">FIlter</div>
+                  <button type="button" class="btn-close btn-close-white pb-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                  <label for="type" class="form-label asterisk">Land</label>
+                  <div class="dropdown">
+                    <button class="btn btn-secondary w-100 text-dark dropdown-toggle text-start" type="button" id="type"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Italy
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="type">
+                      <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                      <li><a class="dropdown-item" href="#">France</a></li>
+                      <li><a class="dropdown-item" href="#">Italy</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="text mt-3">
+                  <div class="row mx-0 d-flex  align-items-center ">
+                    <div class="col-xl-6 me-auto p-0 text-start mt-3">
+                      <label for="from" class="form-label asterisk p-0 text-nowrap">Abfahrtsdatum von</label>
+                      <div class="input-group">
+                        <input class="form-control p-2 date-input" type="text" placeholder="20/10/2021"
+                          aria-describedby="from">
+                        <span class="input-group-text date-span" id="from"><img src="../../../assets/icons/calendar-icon.svg"></span>
+                      </div>
+                    </div>
+                    <div class="col-xl-5 p-0 text-start mt-3">
+                      <label for="to" class="form-label asterisk p-0 text-nowrap">Abfahrtsdatum bis</label>
+                      <div class="input-group">
+                        <input class="form-control p-2 time-input" type="text" placeholder="12:00" id="to">
+                        <span class="input-group-text time-span" id="from"><img src="../../../assets/icons/clock-icon.svg"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text mt-5">
+                  <label for="to" class="form-label asterisk p-0">Abfahrtsdatum bis</label>
+                  <div class="form-check col-1 col-lg-2 col-xl-1 col-md-3 mt-2 text-nowrap me-2" id="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                    <label class="form-check-label" for="flexCheckDefault1">
+                      Sommersaison
+                    </label>
+                  </div>
+
+                  <div class="form-check col-1 col-lg-2 col-xl-1 col-md-3 mt-2 text-nowrap me-2" id="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                    <label class="form-check-label" for="flexCheckDefault1">
+                      Wintersaison
+                    </label>
+                  </div>
+                  <div class="col-5 col-lg-6 col-xl-5 col-md-3 p-0 me-5 text-start mt-4">
+                    <label for="from" class="form-label asterisk p-0 text-nowrap">Anzahl der freien Plätzen</label>
+                    <div class="input-group">
+                      <button class="btn btn-primary btn-op" type="button" id="btn-op">-</button>
+                      <input class="form-control number-input text-center" type="number" placeholder="26"
+                        aria-describedby="from">
+                      <button class="btn btn-primary btn-op" type="button" id="btn-op">+</button>
+                    </div>
+                  </div>
+                  <div class="col-12 p-0 me-5 text-start mt-4 custom-slider">
+                    <label class="asterisk p-0 text-nowrap">Preis</label>
+                    <div class="container px-3"><ng5-slider [(value)]="value" [(highValue)]="highValue" [options]="options"></ng5-slider></div>
+                  </div>
+                  <div class="col-12 p-0 me-5 text-start mt-4 mb-4 custom-slider">
+                    <label class="asterisk p-0 text-nowrap">Reisedauer</label>
+                    <div class="container px-3"><ng5-slider [(value)]="value_2" [(highValue)]="highValue_2" [options]="options_2"></ng5-slider></div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn p-0 w-100"><div class="filter-footer pt-4 pb-4 text-center">
+                FILTER ANWENDEN
+              </div></button>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+    </div>

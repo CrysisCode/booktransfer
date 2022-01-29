@@ -1,0 +1,41 @@
+.footer {
+    background-color: rgba($color: #09152E, $alpha: 1.0);
+    color: #fff;
+    font-family: var(--font-robotoMedium);
+    font-size: var(--font-small);
+
+    & .title {
+        color: #fff;
+        font-family: var(--font-ralewayBold);
+        font-size: var(--font-xxl);
+
+        & span {
+            color: var(--color-primary);
+        }
+
+        & .mail {
+            color: #fff;
+            font-family: var(--font-robotoMedium);
+            font-size: var(--font-small);
+        }
+    }
+
+    & ul {
+        list-style-type:none;
+    }
+
+    & .info-2-ul {
+        color: var(--color-primary);
+    }
+
+    & img {
+        width: 22px;
+    }
+}
+
+.copyright {
+    background-color: rgba($color: #000000, $alpha: 1.0);
+    color: #fff;
+    font-family: var(--font-robotoRegular);
+    font-size: var(--font-normal);
+}

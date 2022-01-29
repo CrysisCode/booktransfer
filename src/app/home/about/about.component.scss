@@ -1,0 +1,47 @@
+.about {
+    font-family: var(--font-robotoRegular);
+    color: var(--color-text);
+
+    & .title {
+        font-family: var(--font-ralewayBold);
+        font-size: var(--font-xxxl);
+        color: var(--color-quaternary);
+        padding-top: 5vh;
+    }
+
+    & .circle {
+        background-color: var(--color-primary);
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+    }
+
+    & .info-number {
+        font-family: var(--font-ralewayBold);
+        font-size: var(--font-xxxl);
+        color: var(--color-quaternary);
+    }
+
+    & .info-text {
+        font-family: var(--font-robotoRegular);
+        font-size: var(--font-larger);
+        color: var(--color-quaternary);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .about {
+    
+        & .title {
+            font-size: var(--font-xxl);
+            text-align: center;
+            font-family: var(--font-ralewayBold);
+        }
+
+        & .text {
+            text-align: justify;
+        }
+    }
+
+}

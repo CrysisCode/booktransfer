@@ -1,0 +1,99 @@
+.workflow {
+  font-family: var(--font-robotoRegular);
+  font-size: var(--font-large);
+  color: #fff;
+  background-image: url("../../../assets/images/tripbanner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .title {
+    font-family: var(--font-robotoBold);
+    font-size: var(--font-xxxl);
+    color: #fff;
+  }
+
+  & .overlay {
+    background: rgb(0, 59, 121);
+    background: radial-gradient(circle, rgba(0, 59, 121, 0.12647065662202384) 0%, rgba(9, 9, 121, 0.2777311608237045) 0%, rgba(0, 19, 73, 0.7791317210477942) 0%);
+  }
+
+  & .description {
+    font-family: var(--font-robotoRegular);
+    font-size: var(--font-smaller);
+    color: #fff;
+  }
+
+  & .description-title {
+    font-family: var(--font-ralewayBold);
+    font-size: var(--font-small);
+    color: #fff;
+  }
+}
+
+.workflow-mobile {
+  font-family: var(--font-robotoRegular);
+  font-size: var(--font-large);
+  color: #fff;
+  background-image: url("../../../assets/images/tripbanner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .title {
+    font-family: var(--font-robotoBold);
+    font-size: var(--font-xxxl);
+    color: #fff;
+  }
+
+  & .overlay {
+    background: rgb(0, 59, 121);
+    background: radial-gradient(circle, rgba(0, 59, 121, 0.12647065662202384) 0%, rgba(9, 9, 121, 0.2777311608237045) 0%, rgba(0, 19, 73, 0.7791317210477942) 0%);
+  }
+
+  & .description {
+    font-family: var(--font-robotoRegular);
+    font-size: var(--font-smaller);
+    color: #fff;
+  }
+
+  & .description-title {
+    font-family: var(--font-ralewayBold);
+    font-size: var(--font-small);
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+  .workflow {
+      display: none;
+  }
+
+  .workflow-mobile {
+    
+    & .title {
+
+      font-size: var(--font-xxl);
+
+    }
+
+    & .subtitle {
+
+      font-size: var(--font-normal);
+
+    }
+
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .workflow-mobile {
+      display: none;
+  }
+
+}
+
+
+

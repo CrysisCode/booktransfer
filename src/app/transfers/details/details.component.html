@@ -1,0 +1,87 @@
+<div class="details pt-5 pb-5">
+  <div class="container d-flex align-items-center mb-5">
+    <div class="title"> Place Ad </div>
+    <img class="pe-3 px-3" src="../../../assets/icons/next-icon.svg">
+    <div class="subtitle"> 2. Group Details </div>
+  </div>
+  <div class="form container">
+    <div class="container ">
+      <div class="row d-flex justify-content-around text-center mx-0">
+        <div class="col-2 col-xl-2 text-center d-flex justify-content-center">
+          <div class="name pt-5">Destination</div><span class="circle d-flex justify-content-center p-2"><img class="check d-flex justify-content-center p-2" src="../../../assets/icons/check-circle-icon.svg"><img src="../../../assets/icons/mappin-icon.svg"></span>
+        </div>
+        <div class="col-2 col-xl-2 text-center d-flex justify-content-center">
+          <div class="name pt-5">Group Details</div><span class="circle circle_sel d-flex justify-content-center p-2"><img
+              src="../../../assets/icons/users-icon.svg"></span>
+        </div>
+        <div class="col-2 col-xl-2 text-center d-flex justify-content-center">
+          <div class="name pt-5">Transfer Preferences</div><span class="circle d-flex justify-content-center p-2"><img
+              src="../../../assets/icons/list-icon.svg"></span>
+        </div>
+        <div class="col-2 col-xl-2 text-center d-flex justify-content-center">
+          <div class="name pt-5">Contact Person</div><span class="circle d-flex justify-content-center p-2"><img
+              src="../../../assets/icons/contact-icon.svg"></span>
+        </div>
+        <div class="col-2 col-xl-2 text-center d-flex justify-content-center">
+          <div class="name pt-5">Place an Ad</div><span class="circle d-flex justify-content-center p-2"><img
+              src="../../../assets/icons/check-icon.svg"></span>
+        </div>
+        <div class="row mx-0 d-flex mt-4 align-items-center ">
+          <div class="col-5 col-lg-2 col-xl-1 col-md-2 p-0 me-5 text-start mt-3">
+            <label for="from" class="form-label asterisk p-0 text-nowrap">Number of passengers*</label>
+            <div class="input-group">
+              <button class="btn btn-primary btn-op" type="button" id="btn-op">-</button>
+              <input class="form-control p-2 number-input text-center" type="number" placeholder="26" aria-describedby="from">
+              <button class="btn btn-primary btn-op" type="button" id="btn-op">+</button>
+            </div>
+          </div>
+          <div class="col-12 col-lg-10 col-xl-5 col-md-10 p-0 mx-xl-5 text-start mt-3">
+            <label for="type" class="form-label asterisk p-0">Type of group</label>
+            <div class="dropdown">
+              <button class="btn btn-secondary w-100 text-dark dropdown-toggle text-start" type="button" id="type"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                School
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="type">
+                <li><a class="dropdown-item" href="#">School1</a></li>
+                <li><a class="dropdown-item" href="#">School2</a></li>
+                <li><a class="dropdown-item" href="#">School3</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row mx-0 d-flex justify-content-between align-items-center p-0 mt-5">
+          <div class="col-12 col-lg-12 col-xl-7 col-md-12 p-0 text-start mt-xl-3">
+            <label for="text-input" class="form-label asterisk p-0">Travel programme</label>
+            <textarea class="form-control" id="text-input" rows="10"></textarea>
+          </div>
+          <div class="col-12 col-lg-12 col-xl-4 col-md-12 p-0 text-start mt-3 file-upload-wrapper">
+            <div class="form-group ">
+              <label class="custom-upload text-center w-100">
+            <input type="file" id="input-file-now" class="form-control file-upload w-100 mt-3" hidden/>
+            <img class="mb-4 mt-5" src="../../../assets/icons/upload-icon.svg">
+            <br>Drop files to upload <br>or<br>
+            <button class="upload-btn btn w-50 mt-3">
+              <input type="file" class="w-100" id="actual-btn" hidden/>
+              <label class="w-100" for="actual-btn">Browse Files</label></button>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-between mt-4">
+      <button class="cancel p-3" routerLink="/home">
+        CANCEL ADD
+      </button>
+      <div class="btns d-flex justify-content-between">
+        <button class="previous mx-3 p-2" routerLink="/transfers/destination">
+          PREVIOUS STEP
+        </button>
+        <button class="next p-3" routerLink="/transfers/preferences">
+          NEXT STEP
+        </button>
+      </div>
+    </div>
+  </div>

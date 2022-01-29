@@ -1,0 +1,280 @@
+.destination {
+  background-color: var(--color-background-alt);
+
+  & .title {
+
+    font-family: var(--font-ralewayBold);
+    font-size: var(--font-xxl);
+
+  }
+
+  & .subtitle {
+
+    font-family: var(--font-ralewayBold);
+    font-size: var(--font-xl);
+
+  }
+
+  & span {
+
+    font-family: var(--font-ralewayRegular);
+    font-size: var(--font-xl);
+
+  }
+
+}
+
+.form {
+
+  & .container {
+    background-color: #fff;
+    padding-bottom: 100px;
+    box-shadow: 0 8px 15px 0 rgba(216, 221, 214, 0.5);
+    width: 100%;
+    position: relative;
+    font-family: var(--font-robotoRegular);
+
+    & .circle {
+      position: absolute;
+      top: -1.5rem;
+      width: 50px;
+      height: 50px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
+      background: var(--color-primary);
+    }
+
+    & .circle_sel {
+      position: absolute;
+      top: -1.5rem;
+      width: 50px;
+      height: 50px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
+      background: var(--color-tertiary);
+    }
+
+    & .name {
+
+      font-family: var(--font-robotoRegular);
+      font-size: var(--font-large);
+
+    }
+
+    & .type-btn_1 {
+
+      background-color: #fff;
+      border: solid 1px rgb(175, 175, 175);
+      color: #000;
+      border-radius: 5px 0px 0px 5px;
+      min-height: 3rem;
+
+    }
+
+    & .type-btn_1:focus {
+
+      border-color: inherit;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      background-color: var(--color-tertiary);
+      color: #fff;
+    }
+
+    & .type-btn_2 {
+
+      background-color: #fff;
+      border: solid 1px rgb(175, 175, 175);
+      border-left: 0px;
+      border-right: 0px;
+      border-radius: 0px 0px 0px 0px;
+      color: #000;
+      min-height: 3rem;
+
+    }
+
+    & .type-btn_2:focus {
+
+      border-color: inherit;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      background-color: var(--color-tertiary);
+      color: #fff;
+
+    }
+
+    & .type-btn_3 {
+
+      background-color: #fff;
+      border: solid 1px rgb(175, 175, 175);
+      color: #000;
+      border-radius: 0px 5px 5px 0px;
+      min-height: 3rem;
+
+    }
+
+    & .type-btn_3:focus {
+
+      border-color: inherit;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      background-color: var(--color-tertiary);
+      color: #fff;
+
+    }
+
+    & .asterisk {
+
+      color: var(--color-text);
+      font-size: var(--font-small);
+
+    }
+
+    & .add {
+
+      color: #fff;
+      background-color: var(--color-tertiary);
+      border: none;
+      border-radius: 0%;
+      font-size: var(--font-large);
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+
+    }
+
+    & .add:focus {
+
+      border-color: inherit;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+
+    }
+
+    & input:focus {
+
+      border-color: rgb(204, 204, 204);
+      -webkit-box-shadow: none;
+      box-shadow: none;
+
+    }
+
+    & .input-group-text {
+
+      border-left: none;
+      background-color: #fff;
+
+    }
+
+    & .time-input {
+
+      border-right: none;
+
+    }
+
+    & .date-input {
+
+      border-right: none;
+
+    }
+
+  }
+
+  & .cancel {
+
+    color: var(--color-tertiary);
+    background-color: rgba(39, 135, 191, 0.01);
+    border: 2px solid;
+    border-color: var(--color-tertiary);
+    border-radius: 0%;
+    font-size: var(--font-normal);
+    font-family: var(--font-robotoBold);
+    min-height: 4rem;
+
+  }
+
+  & .next {
+
+    color: #fff;
+    background-color: var(--color-tertiary);
+    border: none;
+    border-radius: 0%;
+    font-size: var(--font-normal);
+    font-family: var(--font-robotoBold);
+    min-height: 4rem;
+
+  }
+
+
+}
+
+@media only screen and (max-width: 640px) {
+
+  .destination {
+
+    & .form {
+
+      & .circle {
+
+        top: -1.2rem;
+        width: 35px;
+        height: 35px;
+
+      }
+
+
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 640px) {
+
+  .destination {
+
+    & .form {
+
+      & button {
+
+        font-size: 75%;
+
+      }
+
+
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .destination {
+
+    & .name {
+
+      display: none;
+
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 1280px) {
+
+  .destination {
+
+    & .container {
+
+      & .name {
+
+        font-size: var(--font-normal);
+
+      }
+
+    }
+
+  }
+
+}

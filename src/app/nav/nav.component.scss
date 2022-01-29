@@ -1,0 +1,32 @@
+.head {
+
+    & .navbar {
+        background-color: var(--color-secondary);
+        font-family: var(--font-ralewaySemibold);
+        font-size: var(--font-large);
+        box-shadow: 0px 1px 5px black;
+
+        & a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        & .navbar-toggler {
+            border: none;
+        
+            & .material-icons {
+              & .material-icons-outlined {
+                font-size: var(--font-jumbo);
+                color: #fff;
+              }
+            }
+          }
+          
+        & .navbar-toggler:focus {
+            border-color: inherit;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+    }
+}
+

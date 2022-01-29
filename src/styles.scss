@@ -1,0 +1,78 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("assets/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("assets/fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("assets/fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Raleway Regular";
+  src: url("assets/fonts/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: "Raleway SemiBold";
+  src: url("assets/fonts/Raleway-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Raleway Bold";
+  src: url("assets/fonts/Raleway-Bold.ttf");
+}
+
+:root {
+  --color-primary: #2787bf;
+  --color-secondary: #1b6aaf;
+  --color-tertiary: #27bec4;
+  --color-quaternary: #02215b;
+  --color-background: #f2f2f2;
+  --color-background-alt: rgba(39, 135, 191, 0.08);
+  --color-overlay: #0000006e;
+  --color-text: #333333;
+  --color-text-light: #8f8d8d;
+  --font-robotoRegular: "Roboto Regular", sans-serif;
+  --font-robotoMedium: "Roboto Medium", sans-serif;
+  --font-robotoBold: "Roboto Bold", sans-serif;
+  --font-ralewayRegular: "Raleway Regular", sans-serif;
+  --font-ralewaySemibold: "Raleway SemiBold", sans-serif;
+  --font-ralewayBold: "Raleway Bold", sans-serif;
+  --font-smaller: 12px;
+  --font-small: 14px;
+  --font-normal: 16px;
+  --font-large: 18px;
+  --font-larger: 20px;
+  --font-xl: 22px;
+  --font-xxl: 30px;
+  --font-xxxl: 38px;
+  --font-jumbo: 48px;
+}
+
+body {
+  background-color: var(--color-background);
+
+  width: 100vw;
+  max-width: 100%;
+  width: 100vw;
+  &::-webkit-scrollbar {
+    width: 2px;
+    background-color: var(--color-primary);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-secondary);
+    border-radius: 3px;
+  }
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary) var(--color-secondary);
+}
+
+
+

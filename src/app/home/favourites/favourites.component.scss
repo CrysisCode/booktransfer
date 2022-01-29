@@ -1,0 +1,110 @@
+.favourites {
+    font-family: var(--font-robotoRegular);
+    font-size: var(--font-large);
+    background-color: var(--color-background);
+
+    & .title {
+        font-family: var(--font-ralewayBold);
+        font-size: var(--font-xxxl);
+    }
+
+    & .card {
+
+        & .card-title {
+            font-family: var(--font-ralewayBold);
+            font-size: var(--font-larger);
+            color: var(--color-quaternary);
+        }
+
+        & .card-text {
+            font-family: var(--font-robotoRegular);
+            font-size: var(--font-smaller);
+            color: var(--color-text-light);
+        }
+
+        & .card-img-top {
+            width: 100%;
+            height: 15rem;
+            object-fit: fill;
+
+        }
+    }
+
+    & button {
+        font-family: var(--font-robotoBold);
+        font-size: var(--font-large);
+        color: #fff;
+        background-color: var(--color-tertiary);
+        border: none;
+        min-height: 5rem;
+        min-width: 50%;
+        
+    }
+
+}
+
+.slider {
+    overflow: hidden;
+    cursor: grab;
+    font-family: var(--font-robotoRegular);
+    font-size: var(--font-large);
+
+    & .title {
+        font-size: var(--font-xxl);
+        font-family: var(--font-ralewayBold);
+    }
+
+    & .card {
+
+        & .card-title {
+            font-family: var(--font-ralewayBold);
+            font-size: var(--font-normal);
+            color: var(--color-quaternary);
+        }
+
+        & .card-text {
+            font-family: var(--font-robotoRegular);
+            font-size: var(--font-smaller);
+            color: var(--color-text-light);
+        }
+
+        & .card-img-top {
+            width: 100%;
+            height: 10rem;
+            object-fit: fill;
+        }
+
+    }
+
+    & .carousel {
+        width: 120%;
+        margin-left: -7%;
+    }
+
+    & .carousel-item {
+        width: 100%;
+    }
+
+    
+}
+
+
+
+@media only screen and (max-width: 760px) {
+
+    .favourites {
+
+        display: none;
+
+    }
+}
+
+@media only screen and (min-width: 640px) {
+
+    .slider {
+
+        display: none;
+
+    }
+
+}

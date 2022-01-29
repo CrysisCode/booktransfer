@@ -1,0 +1,73 @@
+<div class="destination pt-5 pb-5">
+  <div class="container d-flex align-items-center mb-5">
+    <div class="title"> Place Ad </div> 
+    <img class="pe-3 px-3" src="../../../assets/icons/next-icon.svg">
+    <div class="subtitle"> 1. Destination </div>
+  </div>
+  <div class="form container">
+  <div class="container ">
+      <div class="row d-flex justify-content-around text-center mx-0">
+        <div class="col-2 col-xl-2 text-center d-flex justify-content-center"><div class="name pt-5">Destination</div><span class="circle circle_sel d-flex justify-content-center p-2"><img src="../../../assets/icons/mappin-icon.svg"></span></div>
+        <div class="col-2 col-xl-2 text-center d-flex justify-content-center"><div class="name pt-5">Group Details</div><span class="circle d-flex justify-content-center p-2"><img src="../../../assets/icons/users-icon.svg"></span></div>
+        <div class="col-2 col-xl-2 text-center d-flex justify-content-center"><div class="name pt-5">Transfer Preferences</div><span class="circle d-flex justify-content-center p-2"><img src="../../../assets/icons/list-icon.svg"></span></div>
+        <div class="col-2 col-xl-2 text-center d-flex justify-content-center"><div class="name pt-5">Contact Person</div><span class="circle d-flex justify-content-center p-2"><img src="../../../assets/icons/contact-icon.svg"></span></div>
+        <div class="col-2 col-xl-2 text-center d-flex justify-content-center"><div class="name pt-5">Place an Ad</div><span class="circle d-flex justify-content-center p-2"><img src="../../../assets/icons/check-icon.svg"></span></div>
+        <div class="row mx-0 d-flex justify-content-start align-content-center">
+          <div class="col p-0 col-lg-12 col-xl-5 col-md-12 mt-5"><div class="asterisk text-start pb-2">Type of transfer*</div>
+            <div class="row mx-0 d-flex justify-content-start">
+              <button class="col-4 col-lg-4 col-xl-4 col-md-4 type-btn_1 btn p-2 d-flex align-items-center justify-content-center text-nowrap">Simple Transfer</button>
+              <button class="col-4 col-lg-4 col-xl-4 col-md-4 type-btn_2 btn  p-2 d-flex align-items-center justify-content-center text-nowrap">Round Trip</button>
+              <button class="col-4 col-lg-4 col-xl-4 col-md-4 type-btn_3 btn p-2 d-flex align-items-center justify-content-center text-nowrap">Multiple Day Trip</button>
+            </div>
+        </div>
+  </div>
+  <div class="row mx-0 d-flex mt-3 align-items-center ">
+    <div class="col-12 col-lg-4 col-xl-4 col-md-4 p-0 me-5 me-md-4 text-start mt-3">
+      <label for="from" class="form-label asterisk p-0">From*</label>
+      <input class="form-control p-2" type="text" placeholder="Vienna" id="from">
+    </div>
+    <div class="col-12 col-lg-4 col-xl-4 col-md-4 p-0 me-5 me-md-4 text-start mt-3">
+      <label for="to" class="form-label asterisk p-0">To*</label>
+      <input class="form-control p-2" type="text" placeholder="Bratislava" id="to">
+    </div>
+    <button class="col-12 col-lg-2 col-xl-2 col-md-3 btn add p-2 d-flex align-items-center justify-content-center mt-4 mt-md-5 mt-lg-5 mt-xl-5">
+      <img src="../../../assets/icons/plus-icon.svg">
+      Add Location</button>
+  </div>
+  <div class="row mx-0 d-flex mt-4 align-items-center ">
+    <div class="col-6 col-lg-4 col-xl-2 col-md-3 p-0 me-3 text-start mt-3">
+      <label for="from" class="form-label asterisk p-0">Date*</label>
+      <div class="input-group">
+      <input class="form-control p-2 date-input" type="text" placeholder="20/10/2021" aria-describedby="from">
+      <span class="input-group-text" id="from"><img src="../../../assets/icons/calendar-icon.svg"></span>
+    </div>
+    </div>
+    <div class="col-5 col-lg-4 col-xl-1 col-md-3 p-0 text-start mt-3">
+      <label for="to" class="form-label asterisk p-0">Time*</label>
+      <div class="input-group">
+      <input class="form-control p-2 time-input" type="text" placeholder="12:00" id="to">
+      <span class="input-group-text" id="from"><img src="../../../assets/icons/clock-icon.svg"></span>
+    </div>
+    </div>
+  </div>
+  <div class="row mx-0 d-flex mt-4 align-items-center">
+    <div class="col-6 col-lg-2 col-xl-1 col-md-3 p-0 me-2 text-start mt-3">
+      <label for="from" class="form-label asterisk p-0">Max. Budget</label>
+      <input class="form-control p-2" type="text" placeholder="500" id="from">
+    </div>
+    <div class="col-5 col-lg-4 col-xl-1 col-md-3 p-0 text-start mt-5">
+      EUR
+    </div>
+  </div>
+</div>
+</div>
+<div class="d-flex justify-content-between mt-4">
+  <button class="cancel p-3" routerLink="/home">
+    CANCEL ADD
+  </button>
+  <button class="next p-3" routerLink="/transfers/details">
+    NEXT STEP
+  </button>
+</div>
+
+</div>

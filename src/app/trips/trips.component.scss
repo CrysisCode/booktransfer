@@ -1,0 +1,281 @@
+.trips {
+
+  background-color: var(--color-background);
+
+    & .cover {
+
+        width: 100%;
+        height: 50vh;
+        background-image: url("../../assets/images/tripbanner.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center 60%;
+
+    }
+
+    & .sort-btn {
+
+      width: 100%;
+
+    }
+
+    & .title {
+
+      font-family: var(--font-ralewayBold);
+      font-size: var(--font-xxl);
+
+    }
+
+    & .filter {
+
+        background-color: var(--color-primary);
+    }
+
+    & .filters {
+
+      background-color: var(--color-primary);
+  }
+
+    & .dropdown-toggle {
+
+        background-color: #fff;
+        outline: none;
+        border: none;
+
+    }
+
+    & .dropdown-toggle:focus {
+
+        border-color: inherit;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        
+    }
+
+    & .asterisk {
+  
+        color: #fff;
+        font-size: var(--font-small);
+  
+      }
+
+   & input:focus {
+  
+        border-color: inherit;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border:none;
+  
+     }
+
+    & .input-group-text {
+
+        border-left: none;
+        background-color: #fff;
+  
+    }
+
+    & .time-input {
+
+        border-right: none;
+
+  
+    }
+
+
+    & .time-input:focus {
+
+        border: none;
+        outline: none;
+  
+    }
+
+  
+    & .date-input {
+  
+        border-right: none;
+        
+  
+    }
+
+    & .date-input:focus {
+
+        border: none;
+        outline: none;
+  
+    }
+
+    & .btn-op {
+
+        background-color: var(--color-tertiary);
+        border: none;
+        width: 2rem;
+
+      }
+
+
+    & .btn-op:focus {
+
+        border-color: inherit;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+
+      }
+
+    & button {
+
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border:none;
+
+      }
+
+    & input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button  {
+
+        -webkit-appearance: none;
+        margin: 0;
+
+      }
+
+    & input[type=number] {
+
+        -moz-appearance: textfield;
+
+      }
+
+      ::ng-deep {
+        .custom-slider .ng5-slider .ng5-slider-bar {
+          background: #fff;
+          height: 5px;
+          display: flex;
+          align-content: center;
+        }
+
+        & .custom-slider .ng5-slider .ng5-slider-selection {
+          background: var(--color-tertiary);
+          height: 5px;
+        }
+
+        & .custom-slider .ng5-slider .ng5-slider-pointer {
+          width: 15px;
+          height: 15px;
+          background-color: var(--color-tertiary);
+          border-radius: 3px;
+          top: -5px;
+        }
+
+        & .custom-slider .ng5-slider .ng5-slider-pointer:after {
+          display: none;
+        }
+
+        & .custom-slider .ng5-slider .ng5-slider-bubble {
+          color: rgb(255, 255, 255) !important;
+          bottom: -30px;
+          font-size: var(--font-small);
+        }
+
+      }
+
+      & .filter-footer {
+
+        background-color: var(--color-tertiary);
+        color: #fff;
+        font-size: var(--font-normal);
+        font-family: var(--font-robotoBold);
+
+      }
+
+      & .card {
+
+        & .card-title {
+            font-family: var(--font-ralewayBold);
+            font-size: var(--font-larger);
+            color: var(--color-quaternary);
+        }
+
+        & .card-text {
+            font-family: var(--font-robotoRegular);
+            font-size: var(--font-smaller);
+            color: var(--color-text-light);
+        }
+
+        & .card-img-top {
+            width: 100%;
+            height: 15rem;
+            object-fit: fill;
+
+        }
+    }
+
+    & .circle {
+
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50rem;
+      background-color: var(--color-primary);
+
+    }
+
+    & .modal-content {
+
+      background-color: var(--color-primary);
+
+    }
+
+    & .modal-filter {
+
+      font-family: var(--font-robotoBold);
+      font-size: var(--font-xl);
+      color: #fff;
+
+    }
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+  .trips {
+
+    & .cover {
+
+      display: none;
+  
+  }
+
+  }
+  
+}
+
+@media only screen and (max-width: 900px) {
+
+  .trips {
+
+
+    & .title-1 {
+
+      display: none;
+
+    }
+
+    & .sort {
+
+      display: none;
+
+    }
+
+    & .filter {
+
+      display: none;
+
+    }
+
+    & .title-2 {
+
+      font-size: var(--font-xl);
+
+    }
+  }
+
+}
